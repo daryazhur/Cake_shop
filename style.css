@@ -77,7 +77,7 @@ h2 {
 /* HLAVIČKA */
 .hlavicka {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
 	flex-direction: row;
 }
