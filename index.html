@@ -5,37 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Skvělá cukrárna (standarní obtížnost)</title>
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-	<!-- Naše vlastní CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	<!-- Hlavička -->
 	<dev class="hlavicka">
+		<div id="menu">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<nav class="nav" id="nav">
+				<ul>
+					<li><a href="#">Nabídka dortů</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">O nás</a></li>
+					<li><a href="#">Kontakt</a></li>
+					<li><a href="#">Online objednávka</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
 		<img class="logo" src="images/logo.svg" alt="logo Skvělá cukrárna">
-
-		<ul>
-			<li><a href="#">Nabídka dortů</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">O nás</a></li>
-			<li><a href="#">Kontakt</a></li>
-			<li><a href="#">Online objednávka</a></li>
-		</ul>
 	</dev>
-
-
-
 
 	<!-- Hero sekce s obrázkem a hlavním nadpisem -->
 	<section class="hlavni">
-		<div class="content">
+		<div class="hlavni_content">
 			<h1>Sladké potěšení z&nbsp;kvalitních surovin</h1>
 
-			<p class="popis">
+			<p class="hlavni_popis">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 			</p>
 		</div>
+		<!-- <img class="hlavni_pozadi" src="images/cupcake.jpg" alt="cupcake"> -->
 	</section>
 
 
@@ -43,16 +50,17 @@
 	<!-- sekce Vítejte v naší cukrárně -->
 		
 		<section class="cukrarna">
-			<div class="content">
+			<div class="cukrarna_content">
 				<div class="sloupce">
 					<!-- levý sloupec -->
-					<div class="sloupec">
+					<div class="content">
 						<h2>Vítejte v naší cukrárně</h2>
 					
 						<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
 						<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus officia minima reiciendis beatae, quo consequatur blanditiis molestiae laborum, at porro ipsum soluta temporibus.</p>
-
-						<a class="tlacitko" href="#">Naše výrobky</a>
+						<div class="cukrarna__btn">
+							<a class="cukrarna__btn-odkaz" href="#">Naše výrobky</a>
+						</div>
 					</div>
 
 					<!-- pravý sloupec -->
@@ -65,7 +73,7 @@
 
 	<!-- sekce Dnešní nabídka -->
 	<section class="nabidka">
-		<div class="content">
+		<div class="nabidka_content">
 			<h2>Dnešní nabídka</h2>
 			<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
@@ -112,10 +120,10 @@
 
 	<!-- sekce Náš přístup k pečení -->
 	<section class="pristup">
-		<div class="content">
+		<div class="pristup_content">
 			<div class="sloupce">
 				<!-- levý sloupec -->
-					<img class="foto-peceni" src="images/peceni.jpg" alt="pečení">
+					<img class="pristup__foto" src="images/peceni.jpg" alt="pečení">
 
 				<!-- pravý sloupec -->
 				<div class="sloupecp">
@@ -133,11 +141,11 @@
 
 	<!-- Patička -->
 	<section class="paticka">
-		<div class="content">
+		<div class="paticka_content">
 			<p class="text">©2020, Czechitas. Vytvořeno pro kurz Staň se kóderkou.</p>
 		</div>	
 	</section>
 
-
+<script src="index.js"></script>
 </body>
 </html>
