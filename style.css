@@ -235,8 +235,40 @@ ul a {
     grid-column: 1 / -1;
     grid-row: 4;
     background-color: var(--section);
+    padding-bottom: 40px;
 }
 
+.nabidka_content {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+.nabidka__produkty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nabidka__produkty-dezert1,
+.nabidka__produkty-dezert2,
+.nabidka__produkty-dezert3,
+.nabidka__produkty-dezert4 {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.700);
+    max-width: 320px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.info {
+    margin: 20px;
+}
+
+.foto-dezert {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
 
 /* ************************************************** */
 
@@ -244,11 +276,14 @@ ul a {
 .pristup {
     grid-column: 2;
     grid-row: 5;
+    padding-block: 40px;
 }
 
 .pristup__foto {
     width: 100%;
 }
+
+
 
 
 /* ************************************************** */
@@ -257,6 +292,10 @@ ul a {
 .paticka {
     grid-column: 1 / -1;
     grid-row: 6;
+    text-align: center;
+    padding-block: 30px;
+    background-color: var(--footer_background);
+    color: var(--text_color_hlavni);
 }
 
 
@@ -352,6 +391,40 @@ ul a {
         grid-column: 2;
         grid-row: 1;
         margin-block: auto;
+        border-radius: 5px;
+    }
+
+    /* ************************************************** */
+
+    .nabidka__produkty {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .nabidka__produkty-dezert1 {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert2 {
+        grid-column: 2;
+        grid-row: 1;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert3 {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert4 {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: 440px;
     }
 }
 
@@ -398,5 +471,43 @@ ul a {
 
     .sloupce {
         margin-block: 80px;
+    }
+
+    /* ************************************************** */
+
+    .nabidka_content {
+        margin-left: 140px;
+        padding-right: 140px;
+    }
+
+    .nabidka__produkty {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .nabidka__produkty-dezert1 {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert2 {
+        grid-column: 2;
+        grid-row: 1;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert3 {
+        grid-column: 3;
+        grid-row: 1;
+        max-width: 440px;
+    }
+
+    .nabidka__produkty-dezert4 {
+        grid-column: 4;
+        grid-row: 1;
+        max-width: 440px;
     }
 }
